@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Mona_Sans, IBM_Plex_Sans_Thai } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 const monaSans = Mona_Sans({
   variable: "--font-mona-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
         className={`${monaSans.className} ${ibmPlexSansThai.variable} antialiased pattern`}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );
