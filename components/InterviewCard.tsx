@@ -6,8 +6,8 @@ import Link from "next/link";
 import DisplayTechIcons from "./DisplayTechIcons";
 
 const InterviewCard = ({
-    interviewId,
-    // userId,
+    id,
+    userId,
     role,
     type,
     techstack,
@@ -72,8 +72,8 @@ const InterviewCard = ({
                         <Link
                             href={
                                 feedback
-                                    ? `/interview/${interviewId}/feedback`
-                                    : `/interview/${interviewId}`
+                                    ? `/interview/${id}/feedback`
+                                    : `/interview/${id}`
                             }
                         >
                             {feedback ? "Check Feedback" : "View Interview"}
